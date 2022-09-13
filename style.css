@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'TT Lakes Light';
+    src: url('/fonts/TTLakes/TTLakes-Light.eot');
+    src: local('TT Lakes Light'), local('TTLakes-Light'),
+        url('/fonts/TTLakes/TTLakes-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-Light.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('/fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('/fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Medium';
+    src: url('/fonts/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('/fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes DenimBold';
+    src: url('/fonts/TTLakes/TTLakes-DemiBold.eot');
+    src: local('TT Lakes DemiBold'), local('TTLakes-DemiBold'),
+        url('/fonts/TTLakes/TTLakes-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-DemiBold.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('/fonts/TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('/fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('/fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-family: 'TT Lakes Regular';
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #fff;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+button {
+    display: block;
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----null list----- */
+
+.button {
+    width: 40px;
+    height: 40px;
+}
+
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    padding: 0 16px;
+}
+
+.conteiner-contacts {
+    display: none;
+}
+
+
+.header__repair-checkstatus {
+    display: flex;
+
+}
+
+.repair {
+    margin: 0 16px 0 0;
+}
+
+.header__repair-checkstatus::before {
+    content: '';
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+    border-radius: 1px;
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.page {
+    border-top: 1px solid #D9FFF5;
+    background: #F8F8F8;
+}
+
+.page__title {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.page__title::before {
+    content: '';
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    margin-right: 14px;
+}
+
+.title {
+    font-family: 'TT Lakes Bold';
+    font-size: 28px;
+    letter-spacing: -0.6px;
+}
+
+.nav__list {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 0 24px 16px;
+
+}
+
+.nav__item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__link {
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    white-space: nowrap;
+    padding: 8px 16px;
+}
+
+.nav__item--active {
+    border: 2px solid #B8FFEC;
+    background: #fff;
+}
+
+.subtitle {
+    padding: 0 16px 16px;
+}
+
+.subtitle__text-display768px {
+    display: none;
+}
+
+.subtitle__text-display1120px {
+    display: none;
+}
+
+.page__repair-checkstatus {
+    display: none;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+}
+
+
+.show-all__link {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    padding: 0 0 0 24px;
+}
+
+.show-all__image {
+    margin: 0 16px 0 0;
+}
+
+.image-background__border {
+    width: 100%;
+    padding: 12px 0 24px 0;
+}
+
+
+
+@media(min-width: 768px) {
+
+
+    .header__body {
+        display: flex;
+        height: 88px;
+        padding: 0 40px 0 24px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger::after {
+        content: '';
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 4px;
+    }
+
+    .conteiner-contacts {
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .contacts {
+        display: flex;
+        padding-left: auto;
+        padding-right: 20px;
+    }
+
+    .contacts__chat {
+        margin: 0 16px 0 16px;
+    }
+
+
+    .header__repair-checkstatus {
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .repair {
+        display: flex;
+        margin: 0 16px 0 0;
+    }
+
+    .header__repair-checkstatus::before {
+        content: '';
+        width: 2px;
+        height: 32px;
+        background: #EAEAEA;
+        border-radius: 1px;
+        margin-right: 20px;
+        margin-top: 4px;
+    }
+
+    .page {
+        margin-right: 15px;
+        padding-bottom: 3px;
+    }
+
+
+    .page__title {
+        padding: 24px 0 32px 0;
+    }
+
+    .page__title::before {
+        content: '';
+        margin-right: 20px;
+    }
+
+    .nav__list {
+        padding: 0 0 32px 24px;
+    }
+
+    .subtitle {
+        padding: 0 48px 10px 24px;
+    }
+
+    .page__subtitle {
+        display: flex;
+        margin-right: 25px;
+        background: #F8F8F8;
+    }
+
+    .image-background__border {
+        width: 360px;
+        height: auto;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    .subtitle__text-display768px {
+        display: flex;
+
+    }
+
+    .show-all__link {
+        padding: 0 0 0 33px;
+    }
+
+    .subtitle__text-display1120px {
+        display: none;
+    }
+
+}
+
+
+@media(min-width: 1120px) {
+    body {
+        background: #F8F8F8;
+        ;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .page {
+        margin: 0;
+        border: 0;
+    }
+
+    .page__about {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page__title {
+        padding: 42px 0 0 0;
+    }
+
+    .page__title::before {
+        content: '';
+        margin-right: 32px;
+        padding-top: 42px;
+    }
+
+    .page__repair-checkstatus {
+        display: flex;
+        padding: 42px 32px 0 0;
+    }
+
+    .page__repair {
+        display: flex;
+        padding-right: 32px;
+    }
+
+    .page__checkstatus {
+        display: flex;
+    }
+
+    .page__repair::before {
+        content: 'Оставить заявку';
+        white-space: nowrap;
+        align-self: center;
+        padding-right: 8px;
+    }
+
+    .page__checkstatus::before {
+        content: 'Статус ремонта';
+        white-space: nowrap;
+        align-self: center;
+        padding-right: 8px;
+    }
+
+    .nav__list {
+        display: flex;
+        padding: 0 37px 0 32px;
+        white-space: normal;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .nav__item:last-child {
+        margin-right: auto;
+    }
+
+    .subtitle {
+        padding: 0 36px 13px 34px;
+    }
+
+    .subtitle__text-display1120px {
+        display: inline;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+    }
+
+    .subtitle__text-display768px {
+        display: inline-block;
+    }
+
+    .image-background {
+        display: inline-block;
+    }
+
+    .image-background__border {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .show-all__link {
+        padding: 0 0 0 40px;
+        margin-top: 13px;
+    }
+
+
+}
