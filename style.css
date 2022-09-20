@@ -179,12 +179,20 @@ a {
     letter-spacing: -0.6px;
     line-height: 40px;
 }
+.page__nav{
+    overflow: scroll;
+/* Решение для IE, Edge и Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+/* Решение для Chrome, Safari и Opera */
+.page__nav::-webkit-scrollbar {
+    display: none;
+}
 
 .page__list {
     display: flex;
-    overflow: hidden;
     padding: 0 0 24px 16px;
-
 }
 
 .page__nav-item {
